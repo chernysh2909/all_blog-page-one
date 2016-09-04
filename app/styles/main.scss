@@ -1,9 +1,16 @@
-$icon-font-path: '../fonts/';
+/* google-font */
 
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&subset=cyrillic';
+
+/* import */
+
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/buttons";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,7 +19,111 @@ $icon-font-path: '../fonts/';
 }
 
 
+/* genera-style */
+
 body {
-  
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: $paragraph-color;
+  font-size: 16px;
 }
 
+ol,
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.15s linear 0s;
+  -moz-transition: all 0.15s linear 0s;
+  -o-transition: all 0.15s linear 0s;
+  -ms-transition: all 0.15s linear 0s;
+  transition: all 0.15s linear 0s;
+}
+
+a:focus {
+  outline: medium none;
+  text-decoration: none;
+}
+
+
+/* header */
+
+#page {
+  aside {
+    .logo {
+      margin-top: 30px;
+      img {
+        margin-left: 30px;
+      }
+    }
+    .about-link {
+      margin-top: 40px;
+      padding-left: 10px;
+      li {
+        border-bottom: 1px dotted $paragraph-color;
+        padding: 7px 0;
+        a {
+          font-size: 0.8em;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $paragraph-color;
+          &:hover {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+    .topuniver {
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+    #form-aside {
+    	display: inline-block;
+    	margin-top: 50px;
+    	p{
+    		display: inline-block;
+    		#email-aside{
+    			height: 25px;
+    			width: 130px;
+    			border: 1px solid #b1b1b1;
+    			border-radius: 2px;
+    			font-family:"Open Sans",sans-serif;
+    			font-weight: 400;
+    			font-style: italic;
+    			color: #4c4c4c;
+    			font-size: 1em;
+    			padding: 0 10px;
+
+    		}
+    		button{
+    			background-color: red;
+    			
+    			width: 75px;
+    			height: 25px;
+    			.fa{
+    				color: #fff;
+    			}
+    		}
+    	}
+    }
+  }
+
+}
+
+
+/* responsive */
+
+@import "responsive";
