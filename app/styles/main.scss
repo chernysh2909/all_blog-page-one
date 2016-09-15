@@ -12,115 +12,188 @@
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 
 /* genera-style */
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: $paragraph-color;
-  font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: $paragraph-color;
+    font-size: 16px;
 }
 
 ol,
 ul {
-  li {
-    list-style: none;
-  }
+    li {
+        list-style: none;
+    }
 }
 
 a {
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-  -ms-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 a:hover {
-  text-decoration: none;
-  -webkit-transition: all 0.15s linear 0s;
-  -moz-transition: all 0.15s linear 0s;
-  -o-transition: all 0.15s linear 0s;
-  -ms-transition: all 0.15s linear 0s;
-  transition: all 0.15s linear 0s;
+    text-decoration: none;
+    -webkit-transition: all 0.15s linear 0s;
+    -moz-transition: all 0.15s linear 0s;
+    -o-transition: all 0.15s linear 0s;
+    -ms-transition: all 0.15s linear 0s;
+    transition: all 0.15s linear 0s;
 }
 
 a:focus {
-  outline: medium none;
-  text-decoration: none;
+    outline: medium none;
+    text-decoration: none;
 }
 
 
 /* header */
 
 #page {
-  aside {
-    .logo {
-      margin-top: 30px;
-      img {
-        margin-left: 30px;
-      }
-    }
-    .about-link {
-      margin-top: 40px;
-      padding-left: 10px;
-      li {
-        border-bottom: 1px dotted $paragraph-color;
-        padding: 7px 0;
-        a {
-          font-size: 0.8em;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: $paragraph-color;
-          &:hover {
+    aside {
+        .logo {
+            margin-top: 30px;
+            img {
+                margin-left: 30px;
+            }
+        }
+        .about-link {
+            margin-top: 40px;
+            padding-left: 10px;
+            li {
+                border-bottom: 1px dotted $paragraph-color;
+                padding: 7px 0;
+                a {
+                    font-size: 0.8em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $paragraph-color;
+                    &:hover {
+                        color: $brand-color;
+                    }
+                }
+            }
+        }
+        .topuniver {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        #form-aside {
+            display: inline-block;
+            margin-top: 50px;
+            display: inline-block;
+            #email-aside {
+                height: 25px;
+                width: 60%;
+                border: 1px solid #b1b1b1;
+                border-radius: 2px;
+                font-weight: 400;
+                font-style: italic;
+                color: #4c4c4c;
+                font-size: 13px;
+                padding: 0 10px;
+                display: inline-block;
+                margin-left: 10%
+            }
+            button {
+                border: none;
+                display: inline-block;
+                background-color: $brand-color;
+                width: 25%;
+                height: 25px;
+               
+                .fa {
+                    color: #fff;
+                }
+                &:hover {
+                    background-color: $brand-color-hover;
+                }
+            }
+        }
+        .adobe-ico-block {
+            margin-top: 25px;
+            img {
+                margin-left: 15px;
+                margin-right: 10px;
+            }
+            a {
+                color: #4c4c4c;
+                font-weight: 300;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: 14px;
+                &:hover {
+                    color: $brand-color-hover;
+                }
+            }
+        }
+        .icon-table-left-aside {
+            margin-top: 10px;
+            i {
+                color: #2dc9f7;
+                font-size: 25px;
+                padding-left: 6%;
+                padding-right: 5%;
+            }
+            a {
+                color: #4c4c4c;
+                font-weight: 300;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: 14px;
+                &:hover {
+                    color: $brand-color-hover;
+                }
+            }
+        }
+        .line-aside-block{
+          border-top: 1px solid 
+        }
+        .topnews-ico{
+          margin-top: 50px;
+          margin-bottom: 10px;
+        }
+        .block-last-news{
+          &:after{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-image: url("../images/stripped.png");
+          }
+          h3{
+            font-size: 20px;
+            font-weight: 600;
+          }
+          i{
             color: $brand-color;
+            padding-right: 5px;
+          }
+          time{
+            font-size: 14px;
+          }
+          a{
+            color: $brand-color;
+            text-decoration: underline;
+            font-weight: 300;
+            &:hover{
+              color: $brand-color-hover;
+            }
           }
         }
-      }
     }
-    .topuniver {
-      margin-top: 60px;
-      margin-bottom: 40px;
-    }
-    #form-aside {
-    	display: inline-block;
-    	margin-top: 50px;
-    	p{
-    		display: inline-block;
-    		#email-aside{
-    			height: 25px;
-    			width: 130px;
-    			border: 1px solid #b1b1b1;
-    			border-radius: 2px;
-    			font-family:"Open Sans",sans-serif;
-    			font-weight: 400;
-    			font-style: italic;
-    			color: #4c4c4c;
-    			font-size: 1em;
-    			padding: 0 10px;
-
-    		}
-    		button{
-    			background-color: red;
-    			
-    			width: 75px;
-    			height: 25px;
-    			.fa{
-    				color: #fff;
-    			}
-    		}
-    	}
-    }
-  }
-
 }
 
 
