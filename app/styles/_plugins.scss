@@ -1,0 +1,43 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#owl-demo .item{
+	position: relative;
+}
+
+#next {
+	position: absolute;
+	background: url("../images/pref-ico.png");
+	height: 50px;
+	width: 50px;
+	display: block;
+	cursor: pointer;
+	top: 40%;
+	left: 40px;
+	background-repeat: no-repeat;
+} 
+
+#pref{
+	position: absolute;
+	background: url("../images/next-ico.png");
+	height: 50px;
+	width: 50px;
+	display: block;
+	top: 40%;
+	right: 40px;
+	background-repeat: no-repeat
+}
+
+#owl-demo .owl-controls {
+	position: absolute;
+	bottom: 10%;
+	left: 45%;
+}
+
+#owl-demo .owl-controls .active span{
+		background-color: $brand-color;
+		
+
+}

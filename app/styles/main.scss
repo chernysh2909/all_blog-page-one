@@ -228,11 +228,10 @@ a:focus {
         }
     }
     .icon-block-head {
-        
         margin-left: 45%;
     }
     .search-block {
-        margin-top:10px;
+        margin-top: 10px;
         input {
             border: none;
             border-radius: 1px;
@@ -245,14 +244,12 @@ a:focus {
             color: #050000;
             position: relative;
             font-size: 14px;
-            
         }
         i {
             position: absolute;
             left: 22px;
             color: $brand-color;
             top: 14px;
-            
         }
         button {
             border: none;
@@ -266,18 +263,118 @@ a:focus {
             margin-left: 2%;
             outline: none;
             line-height: 1px;
-            &:hover{
-                background-color:$brand-color-hover;
+            &:hover {
+                background-color: $brand-color-hover;
             }
+        }
+    }
+    .owl-carousel .owl-wrapper-outer {
+        margin-top: 30px;
+        border: 10px solid #dfdfdf;
+    }
+    .kroshki {
+        &>.breadcrumb {
+            padding: 0;
+            margin-bottom: 0;
+            background-color: #fff;
+            margin-top: 25px;
+            li {
+                a {
+                    color: #333333;
+                    font-size: 15px;
+                    font-weight: 400;
+                    &:hover {
+                        color: $brand-color-hover;
+                    }
+                }
+            }
+        }
+    }
+    .video-heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #4c4c4c;
+        font-size: 24px;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .video-card{
+        p{
+            margin-top: 5px;
+        }
+        i{
+            color: #b7b7b7;
+            font-size: 15px;
+        }
+        time{
+            color: #4c4c4c;
+            font-weight:300;
+            font-size: 12px;
+        }
+        h4{
+            font-weight: 400;
+
+        }
+    }
+    .line{
+        border-top: 1px solid #e6e6e6;
+
+    }
+    .content-card{
+        h4{
+            font-size: 35px;
+        }
+        p{
+            margin-bottom: 10px;
+            font-size: 14px;
+            i{
+                   color: #2dc9f7;
+                    padding-right: 5px;
+                    font-size: 18px;
+            }
+            a{
+                color: #2dc9f7;
+                font-size: 13px;
+                text-decoration: none;
+            }
+            time{
+                font-size: 13px;
+            }
+        }
+        img{
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+        .paragraph{
+            font-size: 17px;
         }
     }
 }
 
-#owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
+
+.responsive-video iframe,
+.myvideo object,
+.myvideo embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@import "plugins";
+
 /* responsive */
 
 @import "responsive";
