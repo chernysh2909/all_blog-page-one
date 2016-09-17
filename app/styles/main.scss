@@ -113,7 +113,6 @@ a:focus {
                 background-color: $brand-color;
                 width: 25%;
                 height: 25px;
-               
                 .fa {
                     color: #fff;
                 }
@@ -158,45 +157,127 @@ a:focus {
                 }
             }
         }
-        .line-aside-block{
-          border-top: 1px solid 
+        .line-aside-block {
+            border-top: 1px solid
         }
-        .topnews-ico{
-          margin-top: 50px;
-          margin-bottom: 10px;
+        .topnews-ico {
+            margin-top: 50px;
+            margin-bottom: 10px;
         }
-        .block-last-news{
-          &:after{
-            content: "";
-            display: block;
-            height: 1px;
-            width: 100%;
-            background-image: url("../images/stripped.png");
-          }
-          h3{
-            font-size: 20px;
-            font-weight: 600;
-          }
-          i{
-            color: $brand-color;
-            padding-right: 5px;
-          }
-          time{
-            font-size: 14px;
-          }
-          a{
-            color: $brand-color;
-            text-decoration: underline;
-            font-weight: 300;
-            &:hover{
-              color: $brand-color-hover;
+        .block-last-news {
+            &:after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-image: url("../images/stripped.png");
             }
-          }
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            i {
+                color: $brand-color;
+                padding-right: 5px;
+            }
+            time {
+                font-size: 14px;
+            }
+            a {
+                color: $brand-color;
+                text-decoration: underline;
+                font-weight: 300;
+                &:hover {
+                    color: $brand-color-hover;
+                }
+            }
+        }
+    }
+    nav {
+        margin-top: 50px;
+        ul {
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 3%;
+                a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: #333333;
+                    &:hover {
+                        color: $brand-color-hover;
+                    }
+                }
+            }
+        }
+    }
+    .tel-block-head {
+        margin-top: 30px;
+        font-size: 20px;
+        img {
+            margin-top: 10px;
+        }
+        b {
+            color: $brand-color;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        p {
+            margin-left: 17%;
+            font-size: 14px;
+        }
+    }
+    .icon-block-head {
+        
+        margin-left: 45%;
+    }
+    .search-block {
+        margin-top:10px;
+        input {
+            border: none;
+            border-radius: 1px;
+            width: 70%;
+            height: 25px;
+            background-color: #fff;
+            padding-left: 30px;
+            outline: none;
+            border: 1px solid #cfcfcf;
+            color: #050000;
+            position: relative;
+            font-size: 14px;
+            
+        }
+        i {
+            position: absolute;
+            left: 22px;
+            color: $brand-color;
+            top: 14px;
+            
+        }
+        button {
+            border: none;
+            height: 25px;
+            width: 23%;
+            border-radius: 1px;
+            font-size: 13px;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #2dc7f5;
+            margin-left: 2%;
+            outline: none;
+            line-height: 1px;
+            &:hover{
+                background-color:$brand-color-hover;
+            }
         }
     }
 }
 
-
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 /* responsive */
 
 @import "responsive";
