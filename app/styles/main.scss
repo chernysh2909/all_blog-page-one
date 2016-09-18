@@ -10,6 +10,7 @@
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
+@import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
 // endbower
 .browserupgrade {
     margin: 0.2em 0;
@@ -63,12 +64,12 @@ a:focus {
 
 #page {
     aside {
-        .logo {
-            margin-top: 30px;
-            img {
-                margin-left: 30px;
-            }
-        }
+        // .logo {
+        //     margin-top: 30px;
+        //     img {
+        //         margin-left: 30px;
+        //     }
+        // }
         .about-link {
             margin-top: 40px;
             padding-left: 10px;
@@ -230,46 +231,46 @@ a:focus {
     .icon-block-head {
         margin-left: 45%;
     }
-    .search-block {
-        margin-top: 10px;
-        input {
-            border: none;
-            border-radius: 1px;
-            width: 70%;
-            height: 25px;
-            background-color: #fff;
-            padding-left: 30px;
-            outline: none;
-            border: 1px solid #cfcfcf;
-            color: #050000;
-            position: relative;
-            font-size: 14px;
-        }
-        i {
-            position: absolute;
-            left: 22px;
-            color: $brand-color;
-            top: 14px;
-        }
-        button {
-            border: none;
-            height: 25px;
-            width: 23%;
-            border-radius: 1px;
-            font-size: 13px;
-            color: #fff;
-            text-transform: uppercase;
-            background-color: #2dc7f5;
-            margin-left: 2%;
-            outline: none;
-            line-height: 1px;
-            &:hover {
-                background-color: $brand-color-hover;
-            }
-        }
-    }
+    // .search-block {
+    //     margin-top: 10px;
+    //     input {
+    //         border: none;
+    //         border-radius: 1px;
+    //         width: 70%;
+    //         height: 25px;
+    //         background-color: #fff;
+    //         padding-left: 30px;
+    //         outline: none;
+    //         border: 1px solid #cfcfcf;
+    //         color: #050000;
+    //         position: relative;
+    //         font-size: 14px;
+    //     }
+    //     i {
+    //         position: absolute;
+    //         left: 22px;
+    //         color: $brand-color;
+    //         top: 14px;
+    //     }
+    //     button {
+    //         border: none;
+    //         height: 25px;
+    //         width: 23%;
+    //         border-radius: 1px;
+    //         font-size: 13px;
+    //         color: #fff;
+    //         text-transform: uppercase;
+    //         background-color: #2dc7f5;
+    //         margin-left: 2%;
+    //         outline: none;
+    //         line-height: 1px;
+    //         &:hover {
+    //             background-color: $brand-color-hover;
+    //         }
+    //     }
+    // }
     .owl-carousel .owl-wrapper-outer {
-        margin-top: 30px;
+        margin-top: 40px;
         border: 10px solid #dfdfdf;
     }
     .kroshki {
@@ -301,55 +302,137 @@ a:focus {
             margin-right: 10px;
         }
     }
-    .video-card{
-        p{
+    .video-card {
+        p {
             margin-top: 5px;
         }
-        i{
+        i {
             color: #b7b7b7;
             font-size: 15px;
         }
-        time{
+        time {
             color: #4c4c4c;
-            font-weight:300;
+            font-weight: 300;
             font-size: 12px;
         }
-        h4{
+        h4 {
             font-weight: 400;
-
         }
     }
-    .line{
+    .line {
         border-top: 1px solid #e6e6e6;
-
     }
-    .content-card{
-        h4{
+    .content-card {
+        h4 {
             font-size: 35px;
         }
-        p{
+        p {
             margin-bottom: 10px;
             font-size: 14px;
-            i{
-                   color: #2dc9f7;
-                    padding-right: 5px;
-                    font-size: 18px;
+            i {
+                color: #2dc9f7;
+                padding-right: 5px;
+                font-size: 18px;
             }
-            a{
+            a {
                 color: #2dc9f7;
                 font-size: 13px;
                 text-decoration: none;
             }
-            time{
+            time {
                 font-size: 13px;
             }
         }
-        img{
+        img {
             margin-bottom: 15px;
             margin-top: 10px;
         }
-        .paragraph{
+        .paragraph {
             font-size: 17px;
+        }
+    }
+}
+
+header {
+    .logo {
+        margin-top: 30px;
+        img {
+            margin-left: 5%;
+        }
+    }
+    nav {
+        margin-top: 50px;
+        ul {
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 3%;
+                a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: #333333;
+                    &:hover {
+                        color: $brand-color-hover;
+                    }
+                }
+            }
+        }
+    }
+    .search-block {
+        margin-top: 30px;
+        input {
+            border: none;
+            border-radius: 1px;
+            width: 70%;
+            height: 25px;
+            background-color: #fff;
+            padding-left: 30px;
+            outline: none;
+            border: 1px solid #cfcfcf;
+            color: #050000;
+            position: relative;
+            font-size: 14px;
+        }
+        i {
+            position: absolute;
+            left: 22px;
+            color: $brand-color;
+            bottom: 6px;
+        }
+        button {
+            border: none;
+            height: 25px;
+            width: 23%;
+            border-radius: 1px;
+            font-size: 13px;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #2dc7f5;
+            margin-left: 2%;
+            outline: none;
+            line-height: 1px;
+            &:hover {
+                background-color: $brand-color-hover;
+            }
+        }
+    }
+    .icon-block-head {
+        margin-left: 45%;
+    }
+    .tel-block-head {
+        margin-top: 30px;
+        font-size: 20px;
+        img {
+            margin-top: 10px;
+        }
+        b {
+            color: $brand-color;
+            font-weight: 800;
+            font-size: 25px;
+        }
+        p {
+            margin-left: 17%;
+            font-size: 14px;
         }
     }
 }

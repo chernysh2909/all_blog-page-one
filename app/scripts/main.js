@@ -21,7 +21,12 @@ $(document).ready(function() {
     })
     $('#next').click(function() {
         owl.trigger('owl.prev');
-    })
+    });
+   
+
+   
 });
+
+
 
 

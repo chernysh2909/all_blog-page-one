@@ -1,23 +1,107 @@
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1200px) {
+    header nav ul li {
+        margin-right: 1%;
+    }
+    header .tel-block-head {
+        font-size: 16px;
+    }
+    header .tel-block-head b {
+        font-size: 20px;
+    }
+}
 
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .tel-block-head-mobi {
+        margin-top: 30px;
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: -10px;
+            b {
+                color: $brand-color;
+                font-weight: 800;
+                font-size: 16px;
+            }
+            span {
+                margin-left: 1%;
+                margin-right: 2%;
+            }
+        }
+    }
+    .block-search {
+        margin-top: 0;
+    }
+    .hamburger-box {
+        top: -15px;
+    }
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: $brand-color;
+    }
+    button {
+        outline: none;
+    }
+}
 
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    header .logo img {
+        margin-left: 0;
+    }
+    header .search-block {
+        margin-top: 0;
+    }
+    .tel-block-head-mobi {
+        margin-top: 30px;
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            b {
+                color: $brand-color;
+                font-weight: 800;
+                font-size: 16px;
+            }
+            span {
+                margin-left: 1%;
+                margin-right: 2%;
+            }
+        }
+    }
+    .hamburger-box {
+        top: -50px;
+    }
+    #page .owl-carousel .owl-wrapper-outer {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    .tel-block-head-mobi {
+        .mini {
+            height: 25px;
+        }
+        p {
+            font-size: 0.75em;
+        }
+    }
+    .hamburger-box {
+        top: -40px;
+    }
+}
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {
-	
-}
+@media only screen and (max-width: 480px) {}
 
 
 /* Custom, iPhone Retina */
