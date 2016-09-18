@@ -350,7 +350,97 @@ a:focus {
         .paragraph {
             font-size: 17px;
         }
+        .tag{
+            font-size: 14px;
+            color: $brand-color;
+            a{
+                text-decoration: underline;
+                margin-left: 2%;
+                color: #010101;
+                font-weight: 300;
+                font-size: 14px;
+            }
+        }
+        .comment{
+            font-size: 15px;
+            i{
+                color: $brand-color;
+            }
+        }
+        .about{
+            a{
+                color: $brand-color;
+                text-decoration: underline;
+            }
+        }
     }
+     #form-aside {
+            display: inline-block;
+            margin-top: 50px;
+            display: inline-block;
+            #email-aside {
+                height: 25px;
+                width: 60%;
+                border: 1px solid #b1b1b1;
+                border-radius: 2px;
+                font-weight: 400;
+                font-style: italic;
+                color: #4c4c4c;
+                font-size: 13px;
+                padding: 0 10px;
+                display: inline-block;
+                margin-left: 10%
+            }
+            button {
+                border: none;
+                display: inline-block;
+                background-color: $brand-color;
+                width: 25%;
+                height: 25px;
+                .fa {
+                    color: #fff;
+                }
+                &:hover {
+                    background-color: $brand-color-hover;
+                }
+            }
+        }
+        .adobe-ico-block {
+            margin-top: 25px;
+            img {
+                margin-left: 15px;
+                margin-right: 10px;
+            }
+            a {
+                color: #4c4c4c;
+                font-weight: 300;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: 14px;
+                &:hover {
+                    color: $brand-color-hover;
+                }
+            }
+        }
+        .icon-table-left-aside {
+            margin-top: 10px;
+            i {
+                color: #2dc9f7;
+                font-size: 25px;
+                padding-left: 6%;
+                padding-right: 5%;
+            }
+            a {
+                color: #4c4c4c;
+                font-weight: 300;
+                font-style: italic;
+                text-decoration: underline;
+                font-size: 14px;
+                &:hover {
+                    color: $brand-color-hover;
+                }
+            }
+        }
 }
 
 header {

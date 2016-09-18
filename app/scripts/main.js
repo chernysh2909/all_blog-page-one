@@ -1,11 +1,11 @@
 console.log('\'Allo \'Allo!');
 $(document).ready(function() {
     $('#owl-demo').owlCarousel({
-    	singleItem:true,
-    	// navigation:true,
-    	paginationSpeed:800
+        singleItem: true,
+        // navigation:true,
+        paginationSpeed: 800
     });
-      var owl = $('#owl-demo');
+    var owl = $('#owl-demo');
 
     owl.owlCarousel({
 
@@ -22,11 +22,15 @@ $(document).ready(function() {
     $('#next').click(function() {
         owl.trigger('owl.prev');
     });
-   
 
-   
+    $('.hamburger ').show();
+    $('#banner').hide();
+
+    $('.hamburger ').click(function(event) {
+        event.preventDefault(); // Для того чтобы при нажатии на ссылку не кидало вверх
+        $('#banner ').slideToggle('fast');
+    });
+
+
+
 });
-
-
-
-

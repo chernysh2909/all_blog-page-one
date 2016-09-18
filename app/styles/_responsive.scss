@@ -47,6 +47,62 @@
     button {
         outline: none;
     }
+    .heading-news-mini {
+        margin-top: 30px;
+        img {
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+        span {
+            font-size: 1.875em;
+            color: #000000;
+            margin-left: 20%;
+        }
+    }
+    .bg-menu {
+        background-color: $brand-color;
+    }
+    #banner {
+        padding: 20px 0;
+        ul {
+            li {
+                margin-top: 20px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+     .paragraph {
+            font-size: 16px;
+        }
+        .tag{
+            font-size: 13px;
+            color: $brand-color;
+            a{
+                text-decoration: underline;
+                margin-left: 2%;
+                color: #010101;
+                font-weight: 300;
+                font-size: 13px;
+            }
+        }
+        .comment{
+            font-size: 15px;
+            i{
+                color: $brand-color;
+            }
+        }
+        .about{
+            a{
+                color: $brand-color;
+                text-decoration: underline;
+            }
+        }
 }
 
 
@@ -82,6 +138,32 @@
     #page .owl-carousel .owl-wrapper-outer {
         margin-top: 0;
     }
+    .paragraph {
+            font-size: 16px;
+        }
+        .tag{
+            font-size: 13px;
+            color: $brand-color;
+            a{
+                text-decoration: underline;
+                margin-left: 2%;
+                color: #010101;
+                font-weight: 300;
+                font-size: 13px;
+            }
+        }
+        .comment{
+            font-size: 15px;
+            i{
+                color: $brand-color;
+            }
+        }
+        .about{
+            a{
+                color: $brand-color;
+                text-decoration: underline;
+            }
+        }
 }
 
 @media only screen and (max-width: 669px) {
@@ -96,6 +178,32 @@
     .hamburger-box {
         top: -40px;
     }
+      .paragraph {
+            font-size: 16px;
+        }
+        .tag{
+            font-size: 13px;
+            color: $brand-color;
+            a{
+                text-decoration: underline;
+                margin-left: 2%;
+                color: #010101;
+                font-weight: 300;
+                font-size: 12px;
+            }
+        }
+        .comment{
+            font-size: 15px;
+            i{
+                color: $brand-color;
+            }
+        }
+        .about{
+            a{
+                color: $brand-color;
+                text-decoration: underline;
+            }
+        }
 }
 
 
