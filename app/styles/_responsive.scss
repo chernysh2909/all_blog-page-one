@@ -10,6 +10,10 @@
     header .tel-block-head b {
         font-size: 20px;
     }
+    #business_profitable #free_consultation button {
+        width: 40%;
+        font-size: 2rem;
+    }
 }
 
 
@@ -77,32 +81,36 @@
             }
         }
     }
-     .paragraph {
-            font-size: 16px;
-        }
-        .tag{
+    .paragraph {
+        font-size: 16px;
+    }
+    .tag {
+        font-size: 13px;
+        color: $brand-color;
+        a {
+            text-decoration: underline;
+            margin-left: 2%;
+            color: #010101;
+            font-weight: 300;
             font-size: 13px;
+        }
+    }
+    .comment {
+        font-size: 15px;
+        i {
             color: $brand-color;
-            a{
-                text-decoration: underline;
-                margin-left: 2%;
-                color: #010101;
-                font-weight: 300;
-                font-size: 13px;
-            }
         }
-        .comment{
-            font-size: 15px;
-            i{
-                color: $brand-color;
-            }
+    }
+    .about {
+        a {
+            color: $brand-color;
+            text-decoration: underline;
         }
-        .about{
-            a{
-                color: $brand-color;
-                text-decoration: underline;
-            }
-        }
+    }
+    #business_profitable #free_consultation button {
+        width: 45%;
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -139,31 +147,57 @@
         margin-top: 0;
     }
     .paragraph {
-            font-size: 16px;
-        }
-        .tag{
+        font-size: 16px;
+    }
+    .tag {
+        font-size: 13px;
+        color: $brand-color;
+        a {
+            text-decoration: underline;
+            margin-left: 2%;
+            color: #010101;
+            font-weight: 300;
             font-size: 13px;
+        }
+    }
+    .comment {
+        font-size: 15px;
+        i {
             color: $brand-color;
-            a{
-                text-decoration: underline;
-                margin-left: 2%;
-                color: #010101;
-                font-weight: 300;
-                font-size: 13px;
-            }
         }
-        .comment{
-            font-size: 15px;
-            i{
-                color: $brand-color;
-            }
+    }
+    .about {
+        a {
+            color: $brand-color;
+            text-decoration: underline;
         }
-        .about{
-            a{
-                color: $brand-color;
-                text-decoration: underline;
-            }
+    }
+    #business_profitable .number-phone span {
+        font-size: 3.675em;
+        b {
+            font-size: 70px;
         }
+    }
+    #business_profitable #free_consultation input[type=text]{
+        width: 80%;
+        margin-top: 15px;
+    }
+     #business_profitable #free_consultation button{
+        margin-left: 0;
+        width: 80%;
+        margin-top: 25px;
+    }
+    footer h4{
+        text-align: center;
+    }
+    footer ul{
+        text-align: center;
+    }
+    footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 669px) {
@@ -178,32 +212,71 @@
     .hamburger-box {
         top: -40px;
     }
-      .paragraph {
-            font-size: 16px;
+    .paragraph {
+        font-size: 16px;
+    }
+    .tag {
+        font-size: 13px;
+        color: $brand-color;
+        a {
+            text-decoration: underline;
+            margin-left: 2%;
+            color: #010101;
+            font-weight: 300;
+            font-size: 12px;
         }
-        .tag{
-            font-size: 13px;
+    }
+    .comment {
+        font-size: 15px;
+        i {
             color: $brand-color;
-            a{
-                text-decoration: underline;
-                margin-left: 2%;
-                color: #010101;
-                font-weight: 300;
-                font-size: 12px;
-            }
         }
-        .comment{
-            font-size: 15px;
-            i{
-                color: $brand-color;
-            }
+    }
+    .about {
+        a {
+            color: $brand-color;
+            text-decoration: underline;
         }
-        .about{
-            a{
-                color: $brand-color;
-                text-decoration: underline;
-            }
-        }
+    }
+    #page .icon-table-left-aside a {
+        font-size: 12px;
+    }
+    #page .adobe-ico-block a {
+        font-size: 12px;
+    }
+    #page .content-card .tag {
+        font-size: 11px;
+    }
+    #page .content-card .comment {
+        font-size: 11px;
+    }
+    #page .content-card .about a {
+        font-size: 12px;
+    }
+    #business_profitable #free_consultation button {
+        width: 50%;
+        font-size: 1.6rem;
+    }
+    .mini{
+        display: none;
+    }
+    #business_profitable .number-phone span{
+        font-size: 2.675em;
+    }
+    #business_profitable .number-phone span b{
+        font-size: 50px;
+    }
+    #business_profitable #free_consultation button{
+        font-size: 1.4rem;
+    }
+    #business_profitable #free_consultation input[type=text]{
+        width: 90%;
+    }
+    #business_profitable #free_consultation button{
+        margin-left: 0;
+        width: 90%;
+        margin-top: 25px;
+    }
 }
 
 
