@@ -374,6 +374,40 @@ a:focus {
             }
         }
     }
+    .mini-card{
+        margin-top: 30px;
+        img{
+            margin-right: 15px;
+        }
+        h4{
+            color: #373737;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .paragraph{
+            font-size: 12px;
+        }
+        .date-publick{
+            font-size: 11px;
+            i{
+                color: #2dc9f7;
+            }
+        }
+        .comment{
+            font-size: 12px;
+            i{
+                 color: $brand-color;
+            }
+        }
+        .about{
+             a {
+                color: $brand-color;
+                text-decoration: underline;
+                float: right;
+                font-size: 13px;
+            }
+        }
+    }
     #form-aside {
         display: inline-block;
         margin-top: 50px;
